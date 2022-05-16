@@ -20,14 +20,6 @@
     }
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
 #wrapper {
     display: table;
 }
@@ -629,6 +621,56 @@ body {
     margin-top: 10px;
 }
 
+/* TESTIMONY SECTION */
+
+.testimony-container {
+    padding: 80px 0 0 0;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: main;
+}
+.testimony-container .testimony-title {
+    padding: 10px;
+    border-bottom: 1px solid rgb(230, 184, 33);
+}
+
+.testimony-container .testimonials {
+    padding: 15px;
+    width: 100%;
+}
+.testimony-container .testimonials .testimony {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.testimony-container .testimonials .testimony .testimony-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimony-container
+    .testimonials
+    .testimony
+    .testimony-img-container
+    .testimony-img {
+    border-radius: 50%;
+    padding: 15px;
+}
+.testimony-container .testimonials .testimony .testimony-content {
+    padding: 15px;
+}
+.testimony-container
+    .testimonials
+    .testimony
+    .testimony-content
+    .testimony-name {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 /* Footer section */
 
 .footer {
@@ -810,18 +852,20 @@ body {
     .form-container .contact-box .contact-form {
         width: 50%;
     }
-    main iframe {
-        margin: 15px 0;
+
+    /* TESTIMONY SECTION */
+    .testimony-container {
+        height: 100vh;
     }
-    main form input,
-    main form textarea {
-        display: block;
-        margin: 5px 0;
+    .testimony-container .testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
-    main form input[type='submit'] {
-        padding: 5px;
-        margin: 10px 0;
-        border: 2px solid rgb(88, 145, 145);
-        background-color: whitesmoke;
+    .testimony-container .testimonials .testimony {
+        margin: 0px 15px;
+        width: 40%;
+        height: 70%;
     }
 }
