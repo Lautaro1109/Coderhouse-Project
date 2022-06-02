@@ -1,0 +1,178 @@
+$color-secondary: #e6b821;
+
+.form-container {
+    grid-area: main;
+    background: rgb(34, 34, 34);
+
+    .form-section {
+        padding: 80px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+        .form-content {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+
+            h1 {
+                border-bottom: 1px solid $color-secondary;
+                padding: 5px;
+            }
+
+            span {
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+        .contact-box {
+            width: 85%;
+            align-self: center;
+            background-color: $color-secondary;
+            margin: 10px 0;
+            border-radius: 4px;
+            color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+
+                span {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 17px;
+                    padding: 5px;
+                }
+
+                .info-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .box {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 80%;
+                        background: #ffffff;
+                        margin: 5px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        text-align: center;
+
+                        span {
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            margin: 15px;
+                        }
+
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+            .contact-form {
+                display: flex;
+                width: 100%;
+                background: rgb(250, 250, 250);
+                border-radius: 5px;
+                padding: 15px;
+                margin-top: 10px;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                label {
+                    font-size: 18px;
+                }
+
+                input {
+                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid $color-secondary;
+                    background-color: rgb(250, 250, 250);
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                textarea {
+                    padding: 7px;
+                    border: none;
+                    border-bottom: 1px solid $color-secondary;
+                    background-color: rgb(250, 250, 250);
+                    resize: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .btn-form {
+                    background-color: $color-secondary;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-container {
+        grid-area: main;
+
+        .form-section .form-content > h1 {
+            border-bottom: 1px solid rgb(230, 184, 33);
+            padding: 5px;
+        }
+
+        .form-section .contact-box {
+            flex-direction: row;
+
+            .contact-info span {
+                font-size: 35px;
+            }
+
+            .contact-info .info-box {
+                flex-direction: row;
+                margin-top: 20px;
+            }
+            .contact-info .info-box .box {
+                justify-content: space-around;
+                width: 25%;
+                height: 80%;
+                background: white;
+                margin: 20px;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            .contact-form {
+                width: 50%;
+            }
+        }
+    }
+}
