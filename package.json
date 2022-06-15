@@ -1,11 +1,10 @@
 {
-    "name": "proyect",
+    "name": "taller-de-lucho",
     "version": "1.0.0",
-    "description": "",
+    "description": "El taller de lucho, donde vas a poder resolver cualquier problema en tus autos",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss sass/styles.scss css/form.css",
+        "build-css": "node-sass --include-path scss sass/styles.scss css/styles.css",
         "watch-css": "nodemon -e scss -x \"npm run build-css\""
     },
     "repository": {
@@ -13,7 +12,7 @@
         "url": "git+https://github.com/Lautaro1109/Coderhouse-Project.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "Lautaro Riveros",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/Lautaro1109/Coderhouse-Project/issues"
